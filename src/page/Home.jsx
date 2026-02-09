@@ -13,10 +13,10 @@ const Home = () => {
       </div>
       <div className="Content">
         <div className="text-center mt-4">
-          <img src="./public/img/panner.jpg" className="img-fluid rounded" style={{ width: "300px" }} />
+          <img src="/img/panner.jpg" className="img-fluid rounded" style={{ width: "300px" }} />
         </div>
       </div>
-    
+
     </div>
   );
 };
