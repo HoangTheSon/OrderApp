@@ -1,61 +1,77 @@
-import React from "react";
+import React, { useContext } from "react";
+import { CartContext } from "../context/CartContext";
+import { NavLink } from "react-router-dom";
+
+/* ==== GIỐNG TRANG CART ==== */
+const HEADER_HEIGHT = 60;
+/* =========================== */
 
 const OrderHistory = () => {
-  const orders = [
-    {
-      id: 1,
-      time: "06/02/2026 - 12:30",
-      items: [
-        { name: "Cơm gà", price: 35000, qty: 2 },
-        { name: "Trà sữa", price: 25000, qty: 1 }
-      ]
-    },
-  ];
-
-  const calcTotal = (items) =>
-    items.reduce((sum, i) => sum + i.price * i.qty, 0);
+  const { orderHistory } = useContext(CartContext);
 
   return (
-    <div className="p-3">
+    <div
+      style={{
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        background: "#fff"
+      }}
+    >
+      {/* ===== HEADER ===== */}
+      <div
+        style={{
+          height: HEADER_HEIGHT,
+          display: "flex",
+          alignItems: "center",
+          padding: "0 12px"
+        }}
+      >
+        <NavLink to="/" className="btn btn-outline-dark btn-sm">
+          ←
+        </NavLink>
 
-      <h5 className="fw-bold mb-3 mt-4 text-center">
-         Lịch sử gọi món
-      </h5>
+        <h5 className="flex-grow-1 text-center m-0 mt-4">🧾 Lịch sử đơn hàng</h5>
 
-      {orders.map(order => (
-        <div
-          key={order.id}
-          className="mb-3 p-3 rounded"
-          style={{ background: "#f8f9fa" }}
-        >
-          {/* Time */}
-          <div className="text-muted small mb-2">
-            ⏰ {order.time}
+        <div style={{ width: 32 }} />
+      </div>
+
+      {/* ===== LIST ===== */}
+      <div style={{ flex: 1, overflowY: "auto", padding: "12px" }}>
+        {orderHistory.length === 0 && (
+          <div className="text-center mt-5 text-muted">
+            Chưa có đơn hàng nào
           </div>
+        )}
 
-          {/* Items */}
-          {order.items.map((item, idx) => (
-            <div
-              key={idx}
-              className="d-flex justify-content-between small mb-1"
-            >
-              <span>
-                {item.name} × {item.qty}
-              </span>
-              <span>
-                {(item.price * item.qty).toLocaleString()}đ
-              </span>
+        {orderHistory.map(order => (
+          <div
+            key={order.id}
+            className="mb-4 p-3 rounded"
+            style={{ background: "#f1f1f1" }}
+          >
+            <div className="mb-2">
+              <b>🕒 {order.time}</b>
             </div>
-          ))}
 
-          {/* Total */}
-          <div className="border-top mt-2 pt-2 d-flex justify-content-between fw-bold text-danger">
-            <span>Tổng tiền</span>
-            <span>{calcTotal(order.items).toLocaleString()}đ</span>
+            {order.items.map(item => (
+              <div
+                key={item.id}
+                className="d-flex justify-content-between"
+              >
+                <span>{item.name} x{item.qty}</span>
+                <span>{(item.price * item.qty).toLocaleString()}đ</span>
+              </div>
+            ))}
+
+            <hr />
+
+            <div className="text-end fw-bold text-danger">
+              Tổng: {order.total.toLocaleString()}đ
+            </div>
           </div>
-        </div>
-      ))}
-
+        ))}
+      </div>
     </div>
   );
 };

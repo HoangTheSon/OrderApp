@@ -1,32 +1,32 @@
 [
   {
-    "id": 1,
+    "id": "drink-1",
     "name": "Trà sữa trân châu",
     "price": 30000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Bubble_tea.jpg"
+    "img": "/img/trasua.jpg"
   },
   {
-    "id": 2,
+    "id": "drink-2",
     "name": "Trà đào cam sả",
     "price": 35000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Peach_tea.jpg"
+    "img": "/img/tradaocamxa.jpg"
   },
   {
-    "id": 3,
-    "name": "Nước cam",
+    "id": "drink-3",
+    "name": "Sinh tố",
     "price": 25000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Orange_juice.jpg"
+    "img": "/img/sinhto.jpg"
   },
   {
-    "id": 4,
+    "id": "drink-4",
     "name": "Coca Cola",
     "price": 20000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Coca-Cola_glass.jpg"
+    "img": "/img/coca.jpg"
   },
   {
-    "id": 5,
+    "id": "drink-5",
     "name": "Cà phê sữa đá",
     "price": 25000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/9/9e/Vietnamese_iced_coffee.jpg"
+    "img": "/img/caphe.jpg"
   }
 ]

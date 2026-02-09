@@ -1,32 +1,32 @@
 [
   {
-    "id": 1,
+    "id": "nuoc-1",
     "name": "Phở bò",
     "price": 45000,
-    "img": "./public/img/phobo.jpg"
+    "img": "/img/phobo.jpg"
   },
   {
-    "id": 2,
+    "id": "nuoc-2",
     "name": "Phở gà",
     "price": 40000,
-    "img": "./public/img/phoga.jpg"
+    "img": "/img/phoga.jpg"
   },
   {
-    "id": 3,
+    "id": "nuoc-3",
     "name": "Bún bò Huế",
     "price": 50000,
-    "img": "./public/img/bunbohue.jpg"
+    "img": "/img/bunbohue.jpg"
   },
   {
-    "id": 4,
+    "id": "nuoc-4",
     "name": "Bánh canh",
     "price": 35000,
-    "img": "./public/img/banhcanh.jpg"
+    "img": "/img/banhcanh.jpg"
   },
   {
-    "id": 5,
+    "id": "nuoc-5",
     "name": "Bánh đa cua",
     "price": 45000,
-    "img": "./public/img/banhdacua.jpg"
+    "img": "/img/banhdacua.jpg"
   }
 ]

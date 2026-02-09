@@ -1,32 +1,32 @@
 [
   {
-    "id": 1,
+    "id": "xao-1",
     "name": "Mì xào bò",
     "price": 45000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Beef_chow_mein.jpg"
+    "img": "/img/myxaobo.jpg"
   },
   {
-    "id": 2,
+    "id": "xao-2",
     "name": "Mì xào hải sản",
     "price": 50000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Seafood_chow_mein.jpg"
+    "img": "/img/myxaohaisan.jpg"
   },
   {
-    "id": 3,
+    "id": "xao-3",
     "name": "Ếch xào thế giới",
     "price": 40000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Yangzhou_fried_rice.jpg"
+    "img": "/img/echxao.jpg"
   },
   {
-    "id": 4,
+    "id": "xao-4",
     "name": "Hủ tiếu xào bay",
     "price": 45000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Hu_tieu_xao.jpg"
+    "img": "/img/hutieuxao.jpg"
   },
   {
-    "id": 5,
+    "id": "xao-5",
     "name": "Bún xào chay",
     "price": 35000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/2/23/Stir_fried_noodles.jpg"
+    "img": "/img/bunxaochay.jpg"
   }
 ]

@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
+import { CartContext } from "../context/CartContext";
 import drink from "../data/Drink.json";
 
 const FoodListDrink = () => {
+  const { addToCart } = useContext(CartContext);
   const [qtyMap, setQtyMap] = useState({}); // { id: qty }
 
   const increase = (id) => {
@@ -70,7 +72,18 @@ const FoodListDrink = () => {
             </div>
 
             {/* ORDER */}
-            <button className="btn btn-light btn-sm fw-bold">
+            <button
+              className="btn btn-light btn-sm fw-bold"
+              onClick={() =>
+                addToCart({
+                  id: item.id,
+                  name: item.name,
+                  price: item.price,
+                  img: item.img,
+                  qty: qty
+                })
+              }
+            >
               Đặt
             </button>
           </div>

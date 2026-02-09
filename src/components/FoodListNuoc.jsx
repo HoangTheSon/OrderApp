@@ -1,8 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useContext  } from "react";
 import monNuoc from "../data/MonNuoc.json";
+import { CartContext } from "../context/CartContext";
 
 const FoodListNuoc = () => {
-  const [cartQty, setCartQty] = useState({}); 
+  const { addToCart } = useContext(CartContext);
+  const [cartQty, setCartQty] = useState({});
   // { id: qty }
 
   const increase = (id) => {
@@ -71,9 +73,21 @@ const FoodListNuoc = () => {
             </div>
 
             {/* ORDER */}
-            <button className="btn btn-light btn-sm fw-bold">
+            <button
+              className="btn btn-light btn-sm fw-bold"
+              onClick={() =>
+                addToCart({
+                  id: item.id,
+                  name: item.name,
+                  price: item.price,
+                  img: item.img,
+                  qty: qty
+                })
+              }
+            >
               Đặt
             </button>
+
           </div>
         );
       })}

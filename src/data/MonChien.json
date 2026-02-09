@@ -1,32 +1,32 @@
 [
   {
-    "id": 1,
+    "id": "chien-1",
     "name": "Gà rán",
     "price": 45000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/0/02/Fried_chicken.jpg"
+    "img": "/img/garan.jpg"
   },
   {
-    "id": 2,
+    "id": "chien-2",
     "name": "Khoai tây chiên",
     "price": 30000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/67/French_fries.jpg"
+    "img": "/img/khoaitaychien.jpg"
   },
   {
-    "id": 3,
+    "id": "chien-3",
     "name": "Cánh gà chiên nước mắm",
     "price": 50000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Fried_chicken_wings.jpg"
+    "img": "/img/canhgachien.jpg"
   },
   {
-    "id": 4,
+    "id": "chien-4",
     "name": "Chả giò",
     "price": 40000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/2/25/Spring_rolls.jpg"
+    "img": "/img/chagio.jpg"
   },
   {
-    "id": 5,
+    "id": "chien-5",
     "name": "Đậu hũ chiên",
     "price": 25000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Fried_tofu.jpg"
+    "img": "/img/dauchien.jpg"
   }
 ]

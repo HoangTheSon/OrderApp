@@ -1,32 +1,32 @@
 [
   {
-    "id": 1,
+    "id": "tm-1",
     "name": "Bánh flan",
     "price": 20000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/6b/Creme_caramel.jpg"
+    "img": "/img/banh-flan.jpg"
   },
   {
-    "id": 2,
+    "id": "tm-2",
     "name": "Rau câu dừa",
     "price": 15000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Coconut_jelly.jpg"
+    "img": "/img/raucaudua.jpg"
   },
   {
-    "id": 3,
+    "id": "tm-3",
     "name": "Chè khúc bạch",
     "price": 25000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Che_khuc_bach.jpg"
+    "img": "/img/chekhucbach.jpg"
   },
   {
-    "id": 4,
+    "id": "tm-4",
     "name": "Kem vani",
     "price": 20000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/6/69/Vanilla_ice_cream.jpg"
+    "img": "/img/kemvani.jpg"
   },
   {
-    "id": 5,
+    "id": "tm-5",
     "name": "Bánh mochi",
     "price": 30000,
-    "img": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Mochi.jpg"
+    "img": "/img/banhmochi.jpg"
   }
 ]
