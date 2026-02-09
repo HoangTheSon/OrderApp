@@ -152,7 +152,8 @@ const Cart = () => {
             padding: "12px 20px",
             borderRadius: 8,
             zIndex: 2000,
-            boxShadow: "0 4px 10px rgba(0,0,0,0.2)"
+            boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
+            whiteSpace: "nowrap"
           }}
         >
           ✅ Đặt món thành công!
